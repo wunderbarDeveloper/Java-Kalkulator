@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.MainController">
+   <children>
+      <StackPane opacity="0.95" prefHeight="84.0" prefWidth="465.0">
+         <children>
+            <Rectangle arcHeight="1111.0" arcWidth="45.0" fill="#ebebe1" height="56.0" stroke="BLACK" strokeMiterLimit="0.0" strokeType="INSIDE" style="--background-radius: 111;" width="310.0">
+               <StackPane.margin>
+                  <Insets bottom="1.0" top="10.0" />
+               </StackPane.margin>
+            </Rectangle>
+             <Text fx:id="output" fill="#5eb2d0" lineSpacing="22.0" stroke="#6f6f56" strokeDashOffset="11.0" strokeMiterLimit="11.0" style="-fx-background-radius: 11;" textAlignment="RIGHT" wrappingWidth="289.0">
+               <font>
+                  <Font name="Arial" size="39.0" />
+               </font>
+            </Text>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="53.0" />
+         </opaqueInsets>
+      </StackPane>
+      <HBox alignment="CENTER" focusTraversable="true" opacity="0.76" prefHeight="33.0" prefWidth="357.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="65.0" style="-fx-background-radius: 111;" text="MR" textFill="#4094b5" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="65.0" style="-fx-background-radius: 111;" text="MR+" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="65.0" style="-fx-background-radius: 111;" text="MR-" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="65.0" style="-fx-background-radius: 111;" text="CMR" textAlignment="CENTER" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+         <VBox.margin>
+            <Insets bottom="11.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" focusTraversable="true" opacity="0.76" prefHeight="33.0" prefWidth="357.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="65.0" style="-fx-background-radius: 111;" text="BIN" textFill="#4094b5" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="65.0" style="-fx-background-radius: 111;" text="DEC" textFill="#4094b5" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="65.0" style="-fx-background-radius: 111;" text="⌫" textFill="#4094b5" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="65.0" style="-fx-background-radius: 111;" text="CL" textAlignment="CENTER" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" opacity="0.76" prefHeight="33.0" prefWidth="357.0" spacing="10.0">
+         <children>
+            <Button id="1" mnemonicParsing="false" onAction="#processOperators" prefWidth="65.0" style="-fx-background-radius: 111;" text="\%" textFill="#4094b5" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="65.0" style="-fx-background-radius: 111;" text="√" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="65.0" style="-fx-background-radius: 111;" text="x²" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="65.0" style="-fx-background-radius: 111;" text="/" textAlignment="CENTER" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <VBox.margin>
+            <Insets bottom="11.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" opacity="0.76" prefHeight="33.0" prefWidth="320.0" spacing="10.0" style="-fx-border-radius: 55;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="65.0" style="-fx-background-radius: 111;" text="7" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="65.0" style="-fx-background-radius: 111;" text="8" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="65.0" style="-fx-background-radius: 111;" text="9" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="65.0" style="-fx-background-radius: 111;" text="*" textAlignment="CENTER" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="11.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" opacity="0.76" prefHeight="33.0" prefWidth="300.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="65.0" style="-fx-background-radius: 111;" text="4" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="65.0" style="-fx-background-radius: 111;" text="5" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="65.0" style="-fx-background-radius: 111;" text="6" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="65.0" style="-fx-background-radius: 111;" text="-" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="11.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" opacity="0.76" prefHeight="33.0" prefWidth="300.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="65.0" style="-fx-background-radius: 111;" text="1" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="65.0" style="-fx-background-radius: 111;" text="2" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="65.0" style="-fx-background-radius: 111;" text="3" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="65.0" style="-fx-background-radius: 111;" text="+" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="11.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" opacity="0.76" prefHeight="33.0" prefWidth="305.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="65.0" style="-fx-background-radius: 111;" text="±" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="65.0" style="-fx-background-radius: 111; " text="0" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="65.0" style="-fx-background-radius: 111;" text="." textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="65.0" style="-fx-background-radius: 111;" text="=" textFill="#4094b5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="11.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
