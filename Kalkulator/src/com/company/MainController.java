@@ -11,25 +11,30 @@ import javafx.scene.text.Text;
 
 public class MainController
 {
+
+
     private void sprawdz(double pom)
     {
         if((int)pom==pom)
         {
             output.setText(String.valueOf((int)pom));
             operator="";
+            output2.setText(String.valueOf(operator));
             start=true;
         }
         else
         {
             output.setText(String.valueOf(pom));
             operator="";
+            output2.setText(String.valueOf(operator));
             start=true;
         }
     }
 
     @FXML
     private Text output;
-
+    @FXML
+    private Text output2;
     private String operator="";
     private double numer1=0;
     private double numer3=0;
@@ -87,6 +92,7 @@ public class MainController
 
 
             operator="+";
+            output2.setText(String.valueOf(operator));
             numer1=Float.parseFloat(output.getText());
             output.setText("");
         }
@@ -98,6 +104,7 @@ public class MainController
 
 
             operator="-";
+            output2.setText(String.valueOf(operator));
             numer1=Float.parseFloat(output.getText());
             output.setText("");
         }
@@ -109,6 +116,7 @@ public class MainController
 
 
             operator="*";
+            output2.setText(String.valueOf(operator));
             numer1=Float.parseFloat(output.getText());
             output.setText("");
         }
@@ -120,6 +128,7 @@ public class MainController
 
 
             operator="/";
+            output2.setText(String.valueOf(operator));
             numer1=Float.parseFloat(output.getText());
             output.setText("");
         }
@@ -137,23 +146,26 @@ public class MainController
     public  void processOperators(ActionEvent event)
     {
         String value=((Button)event.getSource()).getText();
-
         if("MR".equals(value))
         {
+
             sprawdz(numer3);
         }
         else if("MR+".equals(value))
         {
+
             numer1=Float.parseFloat(output.getText());
             numer3+=numer1;
         }
         else if("MR-".equals(value))
         {
+
             numer1=Float.parseFloat(output.getText());
             numer3-=numer1;
         }
         else if("CMR".equals(value))
         {
+
             numer3=0;
         }
         else if("CL".equals(value))
@@ -165,6 +177,7 @@ public class MainController
         }
         else if("√".equals(value))
         {
+
             operator="√";
             pom=model.calculate2(operator,Float.parseFloat(output.getText()));
             sprawdz(pom);
@@ -183,12 +196,14 @@ public class MainController
         }
         else if("BIN".equals(value))
         {
+
             operator="BIN";
             pom=model.calculate2(operator,Float.parseFloat(output.getText()));
             sprawdz(pom);
         }
         else if("DEC".equals(value))
         {
+
             operator="DEC";
             pom=model.calculate2(operator,Float.parseFloat(output.getText()));
             sprawdz(pom);
@@ -206,6 +221,7 @@ public class MainController
                 return;
 
             operator=value;
+            output2.setText(String.valueOf(operator));
             numer1=Float.parseFloat(output.getText());
             output.setText("");
         }

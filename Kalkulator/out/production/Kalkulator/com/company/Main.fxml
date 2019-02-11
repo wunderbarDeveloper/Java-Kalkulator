@@ -23,6 +23,17 @@
                <font>
                   <Font name="Arial" size="39.0" />
                </font>
+               <StackPane.margin>
+                  <Insets top="7.0" />
+               </StackPane.margin>
+            </Text>
+            <Text fx:id="output2" fill="#5eb2d0" lineSpacing="22.0" stroke="#6f6f56" strokeDashOffset="11.0" strokeMiterLimit="11.0" textAlignment="CENTER" wrappingWidth="32.13671875">
+               <StackPane.margin>
+                  <Insets right="270.0" top="13.0" />
+               </StackPane.margin>
+               <font>
+                  <Font name="Arial" size="45.0" />
+               </font>
             </Text>
          </children>
          <opaqueInsets>
